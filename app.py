@@ -1,4 +1,3 @@
-ahora agregale el diseño a este y cambia el fondo por un celeste claro : 
 import os
 import streamlit as st
 from bokeh.models.widgets import Button
