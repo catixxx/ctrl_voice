@@ -16,7 +16,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# 🎨 ESTILOS (fondo celeste claro + botón con animación)
+# 🎨 ESTILOS (fondo celeste claro + botón celeste + títulos azules)
 st.markdown("""
     <style>
         body {
@@ -32,13 +32,13 @@ st.markdown("""
             margin-top: 40px;
         }
         h1 {
-            color: #007BFF;
+            color: #007BFF; /* Azul para el título principal */
             text-align: center;
             font-size: 2.8em;
             font-weight: 800;
         }
         h2, h3, h4 {
-            color: #1565c0;
+            color: #007BFF; /* Azul para subtítulos */
             text-align: center;
         }
         .stImage img {
@@ -49,7 +49,7 @@ st.markdown("""
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: radial-gradient(circle, #e91e63 40%, transparent 41%);
+            background: radial-gradient(circle, #4FC3F7 40%, transparent 41%);
             animation: pulse 1.5s infinite;
             margin: 10px auto;
         }
@@ -61,11 +61,11 @@ st.markdown("""
         .mic-text {
             text-align: center;
             font-weight: bold;
-            color: #7b1fa2;
+            color: #007BFF;
             margin-top: 8px;
         }
         .stButton>button {
-            background: linear-gradient(135deg, #7b1fa2, #e91e63);
+            background: linear-gradient(135deg, #4FC3F7, #29B6F6); /* Celeste */
             color: white;
             border: none;
             border-radius: 12px;
@@ -74,12 +74,12 @@ st.markdown("""
             font-size: 1.2em;
             font-weight: bold;
             transition: all 0.3s ease;
-            box-shadow: 0px 4px 10px rgba(123, 31, 162, 0.3);
+            box-shadow: 0px 4px 10px rgba(41, 182, 246, 0.3);
         }
         .stButton>button:hover {
-            background: linear-gradient(135deg, #9c27b0, #ff4081);
+            background: linear-gradient(135deg, #29B6F6, #0288D1); /* Celeste más oscuro */
             transform: scale(1.05);
-            box-shadow: 0px 6px 15px rgba(156, 39, 176, 0.4);
+            box-shadow: 0px 6px 15px rgba(2, 136, 209, 0.4);
         }
     </style>
 """, unsafe_allow_html=True)
