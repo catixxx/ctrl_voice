@@ -32,7 +32,7 @@ st.markdown("""
             margin-top: 40px;
         }
         h1 {
-            color: #0d47a1;
+            color: #007BFF;
             text-align: center;
             font-size: 2.8em;
             font-weight: 800;
@@ -168,4 +168,4 @@ if result and "GET_TEXT" in result:
         pass
 
 st.markdown("---")
-st.caption("💙 Diseño celeste con animación de micrófono | Desarrollado con Streamlit + MQTT + Bokeh")
+
