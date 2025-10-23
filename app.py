@@ -96,7 +96,7 @@ def on_message(client, userdata, message):
 
 broker = "broker.mqttdashboard.com"
 port = 1883
-client1 = paho.Client("GIT-HUBC")
+client1 = paho.Client("catix")
 client1.on_message = on_message
 
 # 🎙️ INTERFAZ PRINCIPAL
@@ -160,7 +160,7 @@ if result and "GET_TEXT" in result:
     client1.on_publish = on_publish
     client1.connect(broker, port)
     message = json.dumps({"Act1": texto})
-    client1.publish("voice_ctrl", message)
+    client1.publish("voice_cata", message)
 
     try:
         os.mkdir("temp")
